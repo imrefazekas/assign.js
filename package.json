@@ -1,0 +1,29 @@
+{
+  "name": "assign.js",
+  "version": "0.1.0",
+  "description": "Tiny libary to assign objects",
+  "keywords": [
+    "assign"
+  ],
+  "homepage": "https://github.com/imrefazekas/assign.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imrefazekas/assign.js.git"
+  },
+  "bugs": {
+    "url": "http://github.com/imrefazekas/assign.js/issues"
+  },
+  "author": {
+    "name": "Imre Fazekas",
+    "email": "mail@imrefazekas.me"
+  },
+  "license": "MIT",
+  "main": "./lib/assign.js",
+  "dependencies": {
+    "isa.js": "~1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 1.0.0"
+  }
+}
