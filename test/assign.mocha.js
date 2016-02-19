@@ -20,7 +20,7 @@ describe('Assign.js', function () {
 		done()
 	})
 
-	describe('Test Harcon status calls', function () {
+	describe('Test Assign services', function () {
 		it('Non recursive assign', function (done) {
 			assigner.respect( true ).recursive(false)
 			let res = assigner.assign( { relatives: {} }, person )
