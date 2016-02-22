@@ -1,6 +1,9 @@
 Assign.js - dependency-free very minimal assign function
 
 [![NPM](https://nodei.co/npm/assign.js.png)](https://nodei.co/npm/assign.js/)
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 ========
 
 [Assign.js](https://github.com/imrefazekas/assign.js) is an extremely tiny helper function to assign objects
