@@ -14,6 +14,11 @@ describe('Assign.js', function () {
 		relatives: {
 			philip: true,
 			karl: false
+		},
+		extra: {
+			_type: 'String',
+			validation: function () { return 'ok' },
+			spectrum: [ 1, 2, 3, 4, 5 ]
 		}
 	}
 	before(function (done) {
@@ -21,6 +26,13 @@ describe('Assign.js', function () {
 	})
 
 	describe('Test Assign services', function () {
+		it('Clone object', function (done) {
+			var cloned = assigner.cloneObject( person )
+			cloned.extra.spectrum[1] = 200
+			expect( cloned.extra.spectrum ).to.eql( [ 1, 200, 3, 4, 5 ] )
+			expect( person.extra.spectrum ).to.eql( [ 1, 2, 3, 4, 5 ] )
+			done()
+		})
 		it('Non recursive assign', function (done) {
 			assigner.respect( true ).recursive(false)
 			let res = assigner.assign( { relatives: {} }, person )
