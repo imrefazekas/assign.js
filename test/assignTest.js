@@ -1,12 +1,14 @@
-var assigner = require('../lib/assign');
+var Assigner = require('../lib/assign')
+var assigner = new Assigner()
 
 var a = {
 	name: 'A',
-	walking: function(){}
-};
+	walking: function () {}
+}
 var b = {
 	name: 'B',
-	sulking: function(){}
-};
+	sulking: function () {}
+}
 
-console.log( assigner.assign( a, b, true ) );
+assigner.blueprinting( true )
+console.log( assigner.assign( a, b ) )
