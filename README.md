@@ -45,6 +45,14 @@ Tells assigner to walk recursively when assigning objects. Yes by default.
 
 Defines the list of keys allowed to be assigned.
 
+	assigner.attributes( [] )
+
+Defines the list of keys excluded to be assigned.
+
+	assigner.primitives( [] )
+
+Defines the list of keys considered as values to be assigned preventing to recursively processed.
+
 	assigner.blueprinting( true )
 
 If it is set to 'true', [Assign.js](https://github.com/imrefazekas/assign.js) will consider the keyset of the destination object as reference otherwise key-set will be read from the object assigned from.
