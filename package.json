@@ -1,6 +1,6 @@
 {
   "name": "assign.js",
-  "version": "2.1.7",
+  "version": "2.2.0",
   "description": "Tiny libary to assign objects",
   "keywords": [
     "assign"
@@ -27,7 +27,7 @@
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
     "gulp-load-plugins": "^1.2.4",
-    "gulp-mocha": "^3.0.0"
+    "gulp-mocha": "^3.0.1"
   },
   "browser": {
 	   "fs": false,
