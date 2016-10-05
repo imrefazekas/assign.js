@@ -6,7 +6,7 @@ let expect = chai.expect
 let Assigner = require('../lib/assign')
 
 describe('Assign.js', function () {
-	let assigner = new Assigner()
+	let assigner = new Assigner().excluded(['age'])
 	let person = {
 		name: 'Phil',
 		address: 'Fine square 2',
@@ -29,6 +29,7 @@ describe('Assign.js', function () {
 		it('Clone object', function (done) {
 			var cloned = assigner.cloneObject( person )
 			cloned.extra.spectrum[1] = 200
+			expect( cloned ).to.not.have.property('age')
 			expect( cloned.extra.spectrum ).to.eql( [ 1, 200, 3, 4, 5 ] )
 			expect( person.extra.spectrum ).to.eql( [ 1, 2, 3, 4, 5 ] )
 			done()
