@@ -1,6 +1,6 @@
 {
   "name": "assign.js",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Tiny libary to assign objects",
   "keywords": [
     "assign"
