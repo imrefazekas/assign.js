@@ -1,6 +1,6 @@
 {
   "name": "assign.js",
-  "version": "2.5.5",
+  "version": "2.5.6",
   "description": "Tiny libary to assign objects",
   "keywords": [
     "assign"
@@ -20,7 +20,7 @@
   "license": "MIT",
   "main": "./lib/assign.js",
   "dependencies": {
-    "isa.js": "^1.8.2"
+    "isa.js": "^1.8.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
