@@ -21,6 +21,44 @@ describe('Assign.js', function () {
 			spectrum: [ 1, 2, 3, 4, 5 ]
 		}
 	}
+
+	let entity = {
+		name: 'Peter',
+		id: 10,
+		address: {
+			street: 'Nowhere 1',
+			country: 'UK'
+		},
+		social: {
+			twitter: '',
+			facebook: ''
+		}
+	}
+	// keep
+	let mask = {
+		name: true,
+		address: {
+			country: true
+		},
+		social: {
+			twitter: true,
+			facebook: false
+		}
+	}
+	// remove
+	let purify = {
+		id: 10,
+		address: {
+			street: true
+		},
+		social: {
+			twitter: true,
+			facebook: false
+		}
+	}
+
+
+
 	before(function (done) {
 		done()
 	})
@@ -58,6 +96,17 @@ describe('Assign.js', function () {
 			assigner.recursive(true).attributes( ).respect( true )
 			let res = assigner.assign( { relatives: { philip: false } }, person )
 			expect( res.relatives.philip ).to.be.false
+			done()
+		})
+
+		it('Masking', function (done) {
+			let res = assigner.mask( entity, mask )
+			console.log( res )
+			done()
+		})
+		it('Purifying', function (done) {
+			let res = assigner.purify( entity, purify )
+			console.log( res )
 			done()
 		})
 	})
