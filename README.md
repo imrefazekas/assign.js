@@ -68,6 +68,14 @@ This option will follow the path of the source object eventually overwriting the
 
 This will project the object into a new object possessing the properties defined by the 2nd parameter which might be given as array or varargs as well.
 
-assigner.cloneObject( source )
+	assigner.cloneObject( source )
 
 This created a cloned object from the source copied recursively.
+
+	assigner.mask( source, mask )
+
+This created an object with the references only allowed by the mask object.
+
+	assigner.purify( source, mask )
+
+This created an object with the references only not denifed by the mask object.
