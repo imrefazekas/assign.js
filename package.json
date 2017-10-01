@@ -1,6 +1,6 @@
 {
   "name": "assign.js",
-  "version": "2.7.6",
+  "version": "2.7.8",
   "description": "Tiny libary to assign objects",
   "keywords": [
     "assign"
@@ -20,19 +20,19 @@
   "license": "MIT",
   "main": "./lib/assign.js",
   "dependencies": {
-    "isa.js": "^1.9.1"
+    "isa.js": "^2.1.0"
   },
   "devDependencies": {
-    "chai": "^4.1.0",
+    "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-eslint": "^4.0.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-mocha": "^4.3.1"
   },
   "browser": {
-	   "fs": false,
-	   "child_process": false
-   },
+    "fs": false,
+    "child_process": false
+  },
   "engines": {
     "node": ">= 4.0.0"
   }
